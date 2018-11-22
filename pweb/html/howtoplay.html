@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8">
+		<title>How to play</title>
+
+		<script type="text/javascript" src="./../js/utility.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="./../css/screen.css">
+		<link rel="shortcut icon" type="image/png" href="./../css/images/favicon.ico" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> <!-- google.com/fonts -->
+	</head>
+
+	<body onload="fadeIn(document.body.childNodes[1], 0.01, 1, 10); fadeIn(document.body.childNodes[3], 0.01, 1, 10);">
+		<div class="popup">
+			<div id="title">
+				<a href="./../index.php">
+					<img class="arrow" src="./../css/images/backarrow.png" alt="Back" style="float: left;">
+				</a>
+
+				<h1>How to play (in Italian)</h1>
+			</div>
+
+			<img class="centered" id="instructions" src="./../css/images/howtoplay.png" alt="Game instructions: press the spacebar in order for the stick to grow up; release the key when the stick's height is approximately equal to the gap bewteen the last two blocks.">
+		
+			<h2>Cos'è Stick Bridges?</h2>
+			<p>
+				Stick Bridges è un gioco arcade infinito.
+				<br>
+				L'idea del gioco è stata presa da Stick Hero, disponibile per <a href="https://itunes.apple.com/it/app/stick-hero/id918338898?mt=8" target="_blank">iOS</a> e <a href="https://play.google.com/store/apps/details?id=com.ketchapp.stickhero&amp;hl=it" target="_blank">Android</a>.
+			</p>
+			<h2>Come si gioca?</h2>
+			<p>
+				Al primo avvio il giocatore si troverà dinanzi ad una schermata di login dov'è possibile accedere con il proprio account esistente o registrarsi come nuovo utente tramite l'apposito link.
+				<br>
+				Una volta effettuato il login, un messaggio indicherà al giocatore di premere il tasto "INVIO" per poter iniziare il gioco.
+				<br>
+				Da questo momento per il giocatore è inoltre possibile effettare il logout o eliminare il proprio account.
+				<br>
+			</p>
+				<p>Il campo di gioco si presenta subito con i 3 elementi fondamentali:</p>
+				<ul>
+					<li>Il cubo <img src="./../css/images/player.png" alt="player" style="height: 14px; width: 14px;">
+					<li>Il primo blocco sul quale è posizionato il cubo
+					<li>Il secondo blocco
+				</ul>
+			<p>
+				L'<strong>obiettivo</strong> del gioco consiste nel far crescere un "ponte" adatto a far attraversare al cubo la distanza tra i due blocchi.
+				<br>
+				Tenendo premuta la barra spaziatrice, il ponte cresce verticalmente: nel momento in cui il giocatore rilascia la barra spaziatrice, il ponte smette di crescere e inizia a ruotare in senso orario fino ad assumere una posizione orizzontale.
+				<br>
+				A questo punto il cubo inizia a muoversi fino a raggiungere la fine del ponte, indipendentemente dalla sua lunghezza.
+				<br>
+				Se il ponte risulterà troppo corto <strong>o troppo lungo</strong> (fino ad oltrepassare il blocco successivo), la partita finirà.	
+				<br>
+				Occorre precisare che finché il giocare non rilascerà la barra spaziatrice, il ponte continuerà a crescere anche quando uscirà dalla schermata del gioco.
+			</p>
+			<p>
+				Al termine della partita verrà mostrato un popup contenente il punteggio massimo raggiunto dal giocatore, seguito da una classifica dei 10 punteggi più alti ottenuti tra gli utenti iscritti al gioco. Inoltre, anche qui è possibile effettuare il logout o eliminare il proprio account.
+			</p>
+		</div>
+
+		<footer>
+			<p>
+				<a href="./howtoplay.html">How to play</a>
+				 - 
+				<a href="./terms.html">Terms of Service</a>
+				 - 
+				<a href="./privacy.html">Privacy</a>
+			</p>
+		</footer>
+	</body>
+</html>

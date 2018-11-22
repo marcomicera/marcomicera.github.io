@@ -1,0 +1,133 @@
+body
+{
+	font-family: 'Roboto', sans-serif; /* google.com/fonts */
+	text-align: center;
+
+	background-position: 100% 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	overflow: hidden; /* nasconde le scrollbar */
+}
+
+.block
+{
+	background: black;
+
+	position: absolute;
+}
+
+.player
+{
+	background-color: red;
+
+	position: absolute;
+}
+
+.stick
+{
+	background: black;
+		
+	position: absolute;
+
+	/*	punto di rotazione dello stick
+		(in basso a sinistra, quando si
+		trova in posizione verticale)	*/
+	transform-origin: 0% 100%;
+	/* http://www.w3.org/TR/css3-transforms/#transform-origin-property */
+}
+
+#score
+{
+	color: white;
+
+/*	text-shadow:	X_DISTANCEpx	Y_DISTANCEpx	BLURpx	rgba(R, G, B, OPACITY) */
+	text-shadow:	0px				0px				8px		rgba(0, 0, 0, 1);
+}
+
+.response
+{
+	display: inline-block;
+		
+	margin-top: 15px;
+	margin-bottom: 10px;
+	padding: 3px;
+
+	position: relative;
+	
+	width: auto;
+
+	/* "Welcome user, press ENTER to play!", 
+	"Account deleted.", 
+	"Press ENTER to play again!",
+	"Logged out successfully.". */
+	background-color: rgba(0, 255, 0, 0.2); /* verde */
+}
+
+/* "Passwords do not match.", 
+	"Something is missing!", 
+	"Username already taken.", 
+	"Missing username and/or password.". */
+#Pa, #So, #Us, #Mi
+{
+	background-color: rgba(255, 0, 0, 0.2); /* rosso */
+}
+
+.popup
+{
+	top: 10%;
+	left: 15%;
+
+	height: 76%;
+	width: 70%;
+
+	overflow: auto;
+	
+	position: absolute;
+
+	opacity: 0; /* per il fadeIn */
+	background-color: rgba(180,180,180,0.4);
+}
+
+label, button
+{
+	margin: 5px;
+}
+
+.resizable_text
+{
+	margin: 0.5%;
+}
+
+table
+{
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+
+	border: solid;
+}
+
+caption
+{
+	margin-bottom: 2px;
+}
+
+footer
+{
+	opacity: 0; /* per il fadeIn */
+	background-color: rgba(180,180,180,0.4);
+
+	height: 4%;
+	width: 100%;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+footer p
+{
+	margin: 2px;
+}
