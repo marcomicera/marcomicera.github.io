@@ -1,2 +1,4 @@
-![First CV page](media/cv/cv1.jpg "")
-![Second CV page](media/cv/cv2.jpg "")
+# My personal website
+Curriculum, projects and University notes.\
+As simple as that.\
+[marcomicera.github.io](https://marcomicera.github.io/)
