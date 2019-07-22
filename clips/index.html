@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta charset="utf-8">
+	    <title>Clips</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<!-- download button -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			a:link {
+				text-decoration: none;
+			}
+
+			a:visited {
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+			a:active {
+				text-decoration: underline;
+			}
+			
+			i.download-button-image {
+				font-size: 24px;
+			}
+			
+			.download-button-class{
+				width: 50px; 
+				height: 50px;
+			}
+			#file-list ul li:first-child {
+				width: 75%;
+			}
+		</style>
+	</head>
+	<body class="w3-margin">
+		<div id="file-list">
+			<ul class="w3-ul w3-border w3-display-container">
+				<a id="a0" href="##"><li class="w3-container w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Cowboy.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Yee haw!</span><br>
+					<span><i>Cowboy</i></span>
+					<audio src="audio/cowboy.mp3"></audio>
+					<script> $("#a0").click(function() { $("audio")[0].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/cowboy.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+            <ul class="w3-ul  w3-border w3-display-container">
+				<a id="a3" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Musician-Female-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Clearing throat</span><br>
+					<span><i>Musician</i></span>
+					<audio src="audio/musician.mp3" ></audio>
+					<script> $("#a3").click(function() { $("audio")[1].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/musician.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a4" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Pharmacist-Female-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Good morning!</span><br>
+					<span><i>Pharmacist</i></span>
+					<audio src="audio/morning.mp3" ></audio>
+					<script> $("#a4").click(function() { $("audio")[2].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/morning.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a5" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Pilot-Male-Dark.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Welcome on board</span><br>
+					<span><i>Pilot</i></span>
+					<audio src="audio/pilot.mp3" ></audio>
+					<script> $("#a5").click(function() { $("audio")[3].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/pilot.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a6" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Santaclaus-Female.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">Ho hoo!</span><br>
+					<span><i>Santa</i></span>
+					<audio src="audio/santa.mp3" ></audio>
+                    <script> $("#unico").click(function() { $("audio")[4].play(); }); </script>
+					<script> $("#a6").click(function() { $("audio")[4].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/santa.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+			<ul class="w3-ul  w3-border w3-display-container">
+				<a id="a7" href="##"><li class="w3-padding-16 w3-hover-opacity">
+					<img src="images/avatars/Technicalsupportrepresentative-Male-Light.png" class="w3-left w3-circle w3-margin-right" style="width:50px">
+					<span class="w3-large">How can I help you?</span><br>
+					<span><i>Tech support</i></span>
+					<audio src="audio/tech.mp3" ></audio>
+                    <script> $("#cavalieri").click(function() { $("audio")[5].play(); }); </script>
+					<script> $("#a7").click(function() { $("audio")[5].play(); }); </script>
+				</li></a>
+				<li class="w3-right">
+					<a class="w3-button w3-gray w3-hover-opacity w3-circle w3-margin-right w3-display-right download-button-class" href="audio/tech.mp3" download="">
+						<i class="fa fa-download w3-display-middle download-button-image"></i>
+					</a>
+				</li>
+			</ul>
+            <ul class="w3-ul w3-border w3-display-container">
+				<a id="party_button" href="##"><li class="w3-container w3-padding-large w3-hover-opacity" style="width:100%;">
+					Play all
+					<script>
+						$("#party_button").click(function () {
+							for(var i = 0; i < $("audio").length; ++i)
+								$("audio")[i].play();
+						});
+					</script>
+				</li></a>
+			</ul> 
+		</div>
+	</body>
+</html>
