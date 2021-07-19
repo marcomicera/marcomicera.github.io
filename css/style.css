@@ -106,7 +106,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 
 /* Navbar disappears  */
-@media (max-width:804px){
+@media (max-width:735px){
 	.w3-modal-content{margin:0 10px;width:auto!important}.w3-modal{padding-top:30px}
 	.w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}	
 	.w3-hide-small{display:none!important}.w3-mobile{display:block;width:100%!important}.w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
