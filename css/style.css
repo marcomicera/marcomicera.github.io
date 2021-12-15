@@ -1,4 +1,21 @@
-﻿.top-contact-button a {
+﻿.resume-entry-title-block p {
+	display: inline;
+}
+
+.resume-entry-title-name {
+	font-weight: 900;
+}
+
+.resume-entry-title-location:before {
+	content: "— ";
+}
+
+.resume-entry-title-location {
+	font-weight: 100;
+	opacity: 0.7;
+}
+
+.top-contact-button a {
 	text-decoration: none;
 }
 
