@@ -10,6 +10,8 @@
 
 		  gtag('config', 'UA-113922571-1');
 		</script>
+		<!-- https://github.com/desandro/masonry -->
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<title>Marco Micera</title>
 		<meta charset="UTF-8">
 		<meta name="theme-color" content="#607d8b">
@@ -263,9 +265,9 @@
 				<h2 class="w3-text-gray w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Latest projects</h2>
 				
 				<!-- List of projects -->
-				<div class="w3-row">
+				<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
 
-					<div id="cc" class="w3-col l3 m6 s6 w3-padding">
+					<div id="cc" class="w3-col l3 m6 s6 w3-padding grid-item">
 						<div class="w3-card-4">
 							<a href="https://github.com/marcomicera/kubemarks">
 								<div class="w3-display-container">
@@ -281,7 +283,7 @@
 						</div>
 					</div>
 
-					<div id="pds" class="w3-col l3 m6 s6 w3-padding">
+					<div id="pds" class="w3-col l3 m6 s6 w3-padding grid-item">
 						<div class="w3-card-4">
 							<a href="https://github.com/marcomicera/followifier">
 								<div class="w3-display-container">
@@ -297,7 +299,7 @@
 						</div>
 					</div>
 				
-					<div id="mad" class="w3-col l3 m6 s6 w3-padding">
+					<div id="mad" class="w3-col l3 m6 s6 w3-padding grid-item">
 						<div class="w3-card-4">
 							<a href="https://github.com/madkoko/rebook">
 								<div class="w3-display-container">
@@ -345,7 +347,7 @@
 						</div>
 					</div> -->
 					
-					<div id="other" class="w3-col l3 m6 s6 w3-padding">
+					<div id="other" class="w3-col l3 m6 s6 w3-padding grid-item">
 						<div class="w3-card-4">
 							<a href="projects">
 								<div class="w3-display-container">
