@@ -10,6 +10,8 @@
 
 		  gtag('config', 'UA-113922571-1');
 		</script>
+		<!-- https://github.com/desandro/masonry -->
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<title>Marco Micera's projects</title>
 		<meta charset="UTF-8">
 		<meta name="theme-color" content="#607d8b">
@@ -65,8 +67,8 @@
 		<div class="w3-content" style="max-width:1400px; margin-top:70px;">
 			<!-- First projects row -->
 
-			<div class="w3-row">
-				<div id="msc" class="w3-col l3 m6 s12 w3-padding">
+			<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+				<div id="msc" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="msc_thesis/MSc Micera's thesis.pdf">
 							<div class="w3-display-container w3-hover-opacity">
@@ -86,7 +88,7 @@
 					</div>
 				</div>
 
-				<div id="cc" class="w3-col l3 m6 s12 w3-padding">
+				<div id="cc" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/kubemarks">
 							<div class="w3-display-container w3-hover-opacity">
@@ -105,7 +107,7 @@
 					</div>
 				</div>
 
-				<div id="mad" class="w3-col l3 m6 s12 w3-padding">
+				<div id="mad" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/followifier">
 							<div class="w3-display-container w3-hover-opacity">
@@ -124,7 +126,7 @@
 					</div>
 				</div>
 				
-				<div id="mad" class="w3-col l3 m6 s12 w3-padding">
+				<div id="mad" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/madkoko/rebook">
 							<div class="w3-display-container w3-hover-opacity">
@@ -143,13 +145,8 @@
 						</div>
 					</div>
 				</div>
-				
-			</div>
-			
-			<!-- Second projects row -->
-			<div class="w3-row">
 
-				<div id="cds" class="w3-col l3 m6 s12 w3-padding">
+				<div id="cds" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/jrt/">
 							<div class="w3-display-container w3-hover-opacity">
@@ -169,7 +166,7 @@
 					</div>
 				</div>
 
-				<div id="sncs" class="w3-col l3 m6 s12 w3-padding">
+				<div id="sncs" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="sncs/Security in networked computing systems Micera's report.pdf">
 							<div class="w3-display-container w3-hover-opacity">
@@ -189,7 +186,7 @@
 					</div>
 				</div>
 
-				<div id="combo" class="w3-col l3 m6 s12 w3-padding">
+				<div id="combo" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/secret-combo">
 							<div class="w3-display-container w3-hover-opacity">
@@ -208,7 +205,7 @@
 					</div>
 				</div>
 			
-				<div id="is" class="w3-col l3 m6 s12 w3-padding">
+				<div id="is" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/smart-door">
 							<div class="w3-display-container w3-hover-opacity">
@@ -227,13 +224,8 @@
 						</div>
 					</div>
 				</div>
-				
-			</div>
-            
-			<!-- Third projects row -->
-            <div class="w3-row">
 
-				<div id="bsc" class="w3-col l3 m6 s12 w3-padding">
+				<div id="bsc" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="bsc_thesis/BSc Micera's thesis.pdf">
 							<div class="w3-display-container w3-hover-opacity">
@@ -254,7 +246,7 @@
 					</div>
 				</div>
 
-				<div id="java" class="w3-col l3 m6 s12 w3-padding">
+				<div id="java" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="https://github.com/marcomicera/eWallet">
 							<div class="w3-display-container w3-hover-opacity">
@@ -274,7 +266,7 @@
 					</div>
 				</div>
 				
-				<div id="stb" class="w3-col l3 m6 s12 w3-padding">
+				<div id="stb" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="http://stb.altervista.org" target="_blank">
 							<div class="w3-display-container w3-hover-opacity">
@@ -295,7 +287,7 @@
 					</div>
 				</div>
 				
-				<div id="db" class="w3-col l3 m6 s12 w3-padding">
+				<div id="db" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="bdd/Database systems Micera's report.pdf">
 							<div class="w3-display-container w3-hover-opacity">
@@ -317,7 +309,7 @@
 					</div>
 				</div>
 				
-				<!-- <div id="small-ad" class="w3-col l3 m6 s12 w3-padding">
+				<!-- <div id="small-ad" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4" style="padding-bottom: 16px;">
 						<div class="w3-container w3-padding">
 							<h2 class="w3-text-blue-gray ">Ad</h2>
@@ -331,12 +323,8 @@
 						</center>
 					</div>
 				</div> -->
-			</div>
-			
-			<!-- Fourth projects row -->
-            <div class="w3-row">
 
-				<div id="ca" class="w3-col l3 m6 s12 w3-padding">
+				<div id="ca" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="##">
 							<div class="w3-display-container w3-hover-opacity">
@@ -357,7 +345,7 @@
 					</div>
 				</div>
 
-				<div id="dbms" class="w3-col l3 m6 s12 w3-padding">
+				<div id="dbms" class="w3-col l3 m6 s12 w3-padding grid-item">
 					<div class="w3-card-4">
 						<a href="##">
 							<div class="w3-display-container w3-hover-opacity">
@@ -379,7 +367,6 @@
 					</div>
 				</div>
 
-			</div>
 			
 			<!-- Ad -->			
 			<!-- <div id="ad" class="w3-container w3-card-2 w3-white w3-padding-16 w3-margin">
@@ -415,6 +402,8 @@
 				</div>
 			</div> -->
 			
+			</div>
+
 		<!-- End Page Container -->
 		</div>
 
