@@ -12,13 +12,6 @@
 		</script>
 		<!-- https://github.com/desandro/masonry -->
 		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-		<!-- https://github.com/desandro/masonry/issues/1147#issuecomment-928873635 -->
-		<script>
-			Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => new Promise(resolve => { img.onload = img.onerror = resolve; }))).then(() => {
-				var msnry = new Masonry('.grid');
-				msnry.layout();
-			});
-		</script>
 		<title>Marco Micera's projects</title>
 		<meta charset="UTF-8">
 		<meta name="theme-color" content="#607d8b">
