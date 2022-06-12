@@ -262,7 +262,7 @@
 				</div>
 			  </div>
 
-			  <div id="masonry" class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:30px">
+			  <div class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:30px">
 
 				<h2 class="w3-text-gray w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Latest projects</h2>
 				
@@ -645,12 +645,6 @@
 				x.className = x.className.replace(" w3-show", "");
 			}
 		}
-		</script>
-
-		<script type="text/javascript">
-			// https://github.com/desandro/masonry/issues/1147#issuecomment-1029400344
-			var $grid = $('#masonry').masonry({itemSelector: '.col', percentPosition: true});
-			$grid.imagesLoaded().progress(function(){$grid.masonry();}); // layout Masonry after each image loads
 		</script>
 	</body>
 </html>
