@@ -10,8 +10,6 @@
 
 		  gtag('config', 'UA-113922571-1');
 		</script>
-		<!-- https://github.com/desandro/masonry -->
-		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 		<title>Marco Micera</title>
 		<meta charset="UTF-8">
 		<meta name="theme-color" content="#607d8b">
@@ -57,7 +55,6 @@
 					<a href="mce" class="w3-bar-item w3-button w3-padding-large">Master</a>
 				</div>
 			</div>
-			<a href="projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
 			<a href="http://stb.altervista.org" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">My online game</a>
 		  </div>
 
@@ -68,7 +65,6 @@
 			<!-- <a href="ripetizioni" class="w3-bar-item w3-button w3-padding-large">Ripetizioni</a> -->
 			<a href="bce" class="w3-bar-item w3-button w3-padding-large">Bachelor's notes</a>
 			<a href="mce" class="w3-bar-item w3-button w3-padding-large">Master's notes</a>
-			<a href="projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
 			<a href="http://stb.altervista.org" target="_blank" class="w3-bar-item w3-button w3-padding-large">My online game</a>
 		  </div>
 		</div>
@@ -260,113 +256,6 @@
 				</div>
 			  </div>
 
-			  <div class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:30px">
-
-				<h2 class="w3-text-gray w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Latest projects</h2>
-				
-				<!-- List of projects -->
-				<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
-
-					<div id="cc" class="w3-col l3 m6 s6 w3-padding grid-item">
-						<div class="w3-card-4">
-							<a href="https://github.com/marcomicera/kubemarks">
-								<div class="w3-display-container">
-									<img src="projects/previews/cc.jpg" alt="Cloud computing project" style="width:100%;" class="w3-hover-opacity">
-									<div class="w3-display-bottomleft w3-container">
-										<h4>kubemarks</h4>
-									</div>
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								Kubernetes periodic benchmarking tool with Prometheus Pushgateway results exposer
-							</div>
-						</div>
-					</div>
-
-					<div id="pds" class="w3-col l3 m6 s6 w3-padding grid-item">
-						<div class="w3-card-4">
-							<a href="https://github.com/marcomicera/followifier">
-								<div class="w3-display-container">
-									<img src="projects/previews/followifier.png" alt="System and device programming project" style="width:100%;" class="w3-hover-opacity">
-									<!-- <div class="w3-display-bottomleft w3-container w3-text-white">
-										<h4>ReBook</h4>
-									</div> -->
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								Wi-Fi tracking system
-							</div>
-						</div>
-					</div>
-				
-					<div id="mad" class="w3-col l3 m6 s6 w3-padding grid-item">
-						<div class="w3-card-4">
-							<a href="https://github.com/madkoko/rebook">
-								<div class="w3-display-container">
-									<img src="projects/previews/mad2.png" alt="Security in networked computing systems project" style="width:100%;" class="w3-hover-opacity">
-									<!-- <div class="w3-display-bottomleft w3-container w3-text-white">
-										<h4>ReBook</h4>
-									</div> -->
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								A simple book sharing app for Android
-							</div>
-						</div>
-					</div>
-				
-					<!-- <div id="cds" class="w3-col l3 m6 s12 w3-padding">
-						<div class="w3-card-4">
-							<a href="https://github.com/marcomicera/jrt/">
-								<div class="w3-display-container">
-									<img src="projects/previews/cds3.png" alt="Concurrent and distributed systems project" style="width:100%;" class="w3-hover-opacity">
-									<div class="w3-display-bottomleft w3-container w3-text-white">
-										<h4 class="w3-large">Java Remote Terminal</h4>
-									</div>
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								Web app for remote terminal access based on Java RMI
-							</div>
-						</div>
-					</div> -->
-					
-					<!-- <div id="sncs" class="w3-col l3 m6 s12 w3-padding">
-						<div class="w3-card-4">
-							<a href="https://github.com/marcomicera/otp">
-								<div class="w3-display-container">
-									<img src="projects/previews/sncs3.png" alt="Security in networked computing systems project" style="width:100%;" class="w3-hover-opacity">
-									<div class="w3-display-bottomleft w3-container">
-										<h4 class="w3-large">One Time Password</h4>
-									</div>
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								Home banking login service with One Time Password
-							</div>
-						</div>
-					</div> -->
-					
-					<div id="other" class="w3-col l3 m6 s6 w3-padding grid-item">
-						<div class="w3-card-4">
-							<a href="projects">
-								<div class="w3-display-container">
-									<img src="projects/previews/wip.jpg" alt="Other projects" style="width:100%;" class="w3-hover-opacity">
-									<div class="w3-display-bottomleft w3-container w3-text-white">
-										<h4 class="w3-large">Other projects</h4>
-									</div>
-								</div>
-							</a>
-							<div class="w3-container w3-padding">
-								Check all the other projects here
-							</div>
-						</div>
-					</div>
-					
-				</div>
-				
-			  </div>
-				
 			  <!-- <div class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:30px">
 					<h2 class="w3-text-gray w3-padding-16">
 						<i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Technologies
