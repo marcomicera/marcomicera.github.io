@@ -62,26 +62,29 @@ career-profile:
 experiences:
     title: Work experience
     info:
-      - role: Senior DevOps Engineer
-        time: Apr 2024 - Present
-        company: Ada Health
-      - role: DevOps Engineer
-        time: May 2022 - Mar 2024
-        company: Ada Health
-      - role: Cloud Infrastructure Engineer
-        time: Jul 2020 - Feb 2022
-        company: Endocode
-        details: |
-          
-      - role: Research Assistant
-        time: Apr 2019 - Jul 2019
-        company: University of Lugano
-        details: |
-
-      - role: Web Developer
-        time: Sep 2016 - Aug 2017
-        company: University of Pisa
-        details: |
+      - company: Ada Health
+        roles:
+        - role: Senior DevOps Engineer
+          time: Apr 2024 - Present
+          details: was a senior
+        - role: DevOps Engineer
+          time: May 2022 - Mar 2024
+          details: was not
+      - company: Endocode
+        roles:
+        - role: Cloud Infrastructure Engineer
+          time: Jul 2020 - Feb 2022  
+          details:
+      - company: University of Lugano
+        roles:
+        - role: Research Assistant
+          time: Apr 2019 - Jul 2019
+          details:
+      - company: University of Pisa
+        roles:
+        - role: Web Developer
+          time: Sep 2016 - Aug 2017
+          details:
 
 education:
     title: Education

@@ -14,20 +14,26 @@
 
     <div class="meta">
 
+      <!-- https://www.visualcv.com/blog/4-tips-to-list-multiple-positions-at-the-same-company/ -->
+
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
+        <h3 class="company">{{ experience.company }}</h3>
       </div><!--//upper-row-->
 
-      <div class="company">{{ experience.company }}</div>
+      {% for role in experience.roles %}
+      <div class="second-upper-row">
+        <div class="job-title">{{ role.role }}</div>
+        <div class="time">{{ role.time }}</div>
+      </div>
+
+      {% if role.details %}
+      <div class="details">
+        {{ role.details | markdownify }}
+      </div><!--//details-->
+      {% endif %}
+      {% endfor %}
 
     </div><!--//meta-->
-
-    {% if experience.details %}
-    <div class="details">
-      {{ experience.details | markdownify }}
-    </div><!--//details-->
-    {% endif %}
 
   </div><!--//item-->
   {% endfor %}
