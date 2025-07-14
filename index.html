@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#">
+<html lang="en">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -14,279 +14,268 @@
 	<title>Marco Micera</title>
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#607d8b">
-	<meta name=”description” content=”Marco Micera&#39;s personal website: portfolio & more.” />
-	<meta name=”robots” content=”noodp” />
-	<meta name=”keywords” content=”marco, micera, unipi, polito, marcomicera, computer, engineering, ingegneria,
-		informatica” />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Marco Micera's personal website: portfolio & more." />
+	<meta name="robots" content="noodp" />
+	<meta name="keywords"
+		content="marco, micera, unipi, polito, marcomicera, computer, engineering, ingegneria, informatica" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/png" href="media/logo/16.png" />
-	<link rel="stylesheet" href="css/style.css?v=2.2">
-	<link rel="stylesheet" href="css/colors.css?v=1.0">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<!-- Link to Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="theme-color" content="#607d8b" /> <!-- Chrome navbar color -->
+	<!-- Custom styles for fonts, if needed, though Tailwind handles most styling -->
+	<style>
+		/* Define custom font families for Lato and Montserrat */
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+		body {
+			font-family: 'Inter', sans-serif;
+		}
+	</style>
 
 	<!-- LinkedIn -->
 	<meta property="og:title" content="Website & Portfolio" />
 	<meta property="og:image" content="https://marcomicera.github.io/media/images/profile_pics/formal3_squared.jpg" />
 	<meta property="og:description" content="Marco Micera&#39;s personal website: portfolio & more." />
 	<meta property="og:url" content="https://marcomicera.github.io/" />
-
-	<style>
-		body,
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			font-family: "Lato", sans-serif
-		}
-
-		.w3-bar,
-		h1,
-		button {
-			font-family: "Montserrat", sans-serif
-		}
-
-		.fa-anchor,
-		.fa-coffee {
-			font-size: 200px
-		}
-	</style>
 </head>
 
-<body>
+<body class="bg-gray-100 text-gray-700">
 
 	<!-- Page container -->
-	<div class="w3-content w3-margin-top w3-margin-bottom" style="max-width:1400px; margin-top:70px;">
+	<div class="container mx-auto px-4 py-8 max-w-6xl">
 
-		<!-- The grid -->
-		<div class="w3-row-padding">
+		<!-- Main grid layout -->
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-			<!-- Left column -->
-			<div class="w3-col l3 m4 s12 w3-hide-small-pp">
-
-				<!-- Profile pic -->
-				<div class="w3-white w3-text-gray w3-card-4">
-					<div class="w3-display-container">
-						<img src="media/images/profile_pics/formal3_squared.jpg" style="width:100%" alt="Avatar">
-						<div class="w3-display-bottomleft w3-container w3-text-white">
-							<h2>Marco</br>Micera</h2>
+			<!-- Left column - Profile Card (hidden on small screens) -->
+			<div class="md:col-span-1 hidden md:block">
+				<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+					<div class="relative">
+						<img src="media/images/profile_pics/formal3_squared.jpg" alt="Marco Micera Profile"
+							class="w-full h-auto object-cover">
+						<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+							<h2 class="text-2xl font-semibold">Marco<br>Micera</h2>
 						</div>
 					</div>
-					<div class="w3-container">
-						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><b>Senior
-								DevOps Engineer</b></p>
-						<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>Berlin, Germany
+					<div class="p-6">
+						<p class="mb-2 flex items-center text-gray-800">
+							<i class="fa fa-briefcase fa-fw mr-3 text-slate-600 text-lg"></i>
+							<b class="font-medium">Senior DevOps Engineer</b>
 						</p>
-						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="mailto:marco.micera@gmail.com" target="_blank">marco.micera@gmail.com</a></p>
-						<p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="https://github.com/marcomicera" target="_blank">GitHub</a></p>
-						<p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank">LinkedIn</a></p>
+						<p class="mb-2 flex items-center text-gray-800">
+							<i class="fa fa-home fa-fw mr-3 text-slate-600 text-lg"></i>
+							Berlin, Germany
+						</p>
+						<p class="mb-2 flex items-center text-gray-800">
+							<i class="fa fa-envelope fa-fw mr-3 text-slate-600 text-lg"></i>
+							<a href="mailto:marco.micera@gmail.com" target="_blank"
+								class="text-slate-600 hover:underline">marco.micera@gmail.com</a>
+						</p>
+						<p class="mb-2 flex items-center text-gray-800">
+							<i class="fa fa-github fa-fw mr-3 text-slate-600 text-lg"></i>
+							<a href="https://github.com/marcomicera" target="_blank"
+								class="text-slate-600 hover:underline">GitHub</a>
+						</p>
+						<p class="mb-2 flex items-center text-gray-800">
+							<i class="fa fa-linkedin fa-fw mr-3 text-slate-600 text-lg"></i>
+							<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank"
+								class="text-slate-600 hover:underline">LinkedIn</a>
+						</p>
 					</div>
 				</div>
 			</div>
 
-			<!-- Right column -->
-			<div class="w3-col l9 m8 s12">
+			<!-- Right column - Main Content -->
+			<div class="col-span-1 md:col-span-2">
 
-				<!-- Contact -->
-				<div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-hide-medium w3-hide-large"
-					style="padding-bottom:10px;">
-
-					<h2 class="w3-text-gray w3-padding-16"><i
-							class="fa fa-address-card fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Marco
-						Micera</h2>
-
-					<div class="w3-container">
-						<p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><b>Senior
-								DevOps Engineer</b></p>
-						<p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-gray"></i>Berlin, Germany
-						</p>
-						<p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="mailto:marco.micera@gmail.com" target="_blank">marco.micera@gmail.com</a></p>
-						<p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="https://github.com/marcomicera" target="_blank">GitHub</a></p>
-						<p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-blue-gray"></i><a
-								href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank">LinkedIn</a></p>
-					</div>
-
+				<!-- Contact Section (visible on small screens only) -->
+				<div class="bg-white shadow-lg rounded-lg p-6 mb-8 md:hidden">
+					<h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+						<i class="fa fa-address-card fa-fw mr-4 text-slate-600 text-3xl"></i>
+						Marco Micera
+					</h2>
+					<p class="mb-2 flex items-center text-gray-800">
+						<i class="fa fa-briefcase fa-fw mr-3 text-slate-600 text-lg"></i>
+						<b class="font-medium">Senior DevOps Engineer</b>
+					</p>
+					<p class="mb-2 flex items-center text-gray-800">
+						<i class="fa fa-home fa-fw mr-3 text-slate-600 text-lg"></i>
+						Berlin, Germany
+					</p>
+					<p class="mb-2 flex items-center text-gray-800">
+						<i class="fa fa-envelope fa-fw mr-3 text-slate-600 text-lg"></i>
+						<a href="mailto:marco.micera@gmail.com" target="_blank"
+							class="text-slate-600 hover:underline">marco.micera@gmail.com</a>
+					</p>
+					<p class="mb-2 flex items-center text-gray-800">
+						<i class="fa fa-github fa-fw mr-3 text-slate-600 text-lg"></i>
+						<a href="https://github.com/marcomicera" target="_blank"
+							class="text-slate-600 hover:underline">GitHub</a>
+					</p>
+					<p class="mb-2 flex items-center text-gray-800">
+						<i class="fa fa-linkedin fa-fw mr-3 text-slate-600 text-lg"></i>
+						<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank"
+							class="text-slate-600 hover:underline">LinkedIn</a>
+					</p>
 				</div>
 
-				<!-- Experience -->
-				<div class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:10px;">
-
-					<!-- Title -->
-					<h2 class="w3-text-gray w3-padding-16">
-						<i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Experience
+				<!-- Experience Section -->
+				<div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+					<h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+						<i class="fa fa-suitcase fa-fw mr-4 text-slate-600 text-3xl"></i>
+						Experience
 					</h2>
 
-					<!-- Ada Senior -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/ada.jpeg" style="height: 50px; width: 50px;">
+					<!-- Experience Entry Template -->
+					<div class="space-y-6">
+						<!-- Ada Senior -->
+						<div class="flex items-center">
+							<img src="media/images/ada.jpeg"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Ada Health Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">Senior DevOps Engineer</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://ada.com" target="_blank" class="text-slate-600 hover:underline">Ada
+										Health</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Apr 2024 - Jun 2025
+								</p>
 							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">Senior DevOps Engineer</p>
-									<p class="resume-entry-title-location">
-										<a href="https://ada.com" target="_blank">Ada Health</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr
-									2024 - Jun 2025</h6>
+						</div>
+						<hr class="border-gray-200">
+
+						<!-- Ada -->
+						<div class="flex items-center">
+							<img src="media/images/ada.jpeg"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Ada Health Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">DevOps Engineer</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://ada.com" target="_blank" class="text-slate-600 hover:underline">Ada
+										Health</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>May 2022 - Mar 2024
+								</p>
+							</div>
+						</div>
+						<hr class="border-gray-200">
+
+						<!-- Endocode -->
+						<div class="flex items-center">
+							<img src="media/images/endocode.jpeg"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Endocode Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">Cloud Infrastructure Engineer</h3>
+								<p class="text-gray-600 text-sm">
+									Endocode (now <a href="https://hoverture.com/" target="_blank"
+										class="text-slate-600 hover:underline">Hoverture Europe</a>)
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Jul 2020 - Feb 2022
+								</p>
+							</div>
+						</div>
+						<hr class="border-gray-200">
+
+						<!-- USI -->
+						<div class="flex items-center">
+							<img src="media/images/usi.png"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4"
+								alt="University of Lugano Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">Research Assistant</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://www.usi.ch/en" target="_blank"
+										class="text-slate-600 hover:underline">University of Lugano</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Apr 2019 - Jul 2019
+								</p>
+							</div>
+						</div>
+						<hr class="border-gray-200">
+
+						<!-- Uni Pisa -->
+						<div class="flex items-center">
+							<img src="media/images/unipi.png"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4"
+								alt="University of Pisa Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">Web Developer</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://www.ing.unipi.it/en/" target="_blank"
+										class="text-slate-600 hover:underline">University of Pisa</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Sep 2016 - Aug 2017
+								</p>
 							</div>
 						</div>
 					</div>
-					<hr>
-
-					<!-- Ada -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/ada.jpeg" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">DevOps Engineer</p>
-									<p class="resume-entry-title-location">
-										<a href="https://ada.com" target="_blank">Ada Health</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May
-									2022 - Mar 2024</h6>
-							</div>
-						</div>
-					</div>
-					<hr>
-
-					<!-- Endocode -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/endocode.jpeg" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">Cloud Infrastructure Engineer</p>
-									<p class="resume-entry-title-location">
-										Endocode (now <a href="https://hoverture.com/" target="_blank">Hoverture
-											Europe</a>)
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul
-									2020 - Feb 2022</h6>
-							</div>
-						</div>
-					</div>
-					<hr>
-
-					<!-- USI -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/usi.png" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">Research Assistant</p>
-									<p class="resume-entry-title-location">
-										<a href="https://www.usi.ch/en" target="_blank">University of Lugano</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr
-									2019 - Jul 2019</h6>
-							</div>
-						</div>
-					</div>
-					<hr>
-
-					<!-- Uni Pisa -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/unipi.png" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">Web Developer</p>
-									<p class="resume-entry-title-location">
-										<a href="https://www.ing.unipi.it/en/" target="_blank">University of Pisa</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep
-									2016 - Aug 2017</h6>
-							</div>
-						</div>
-					</div>
-
 				</div>
 
-				<!-- Education -->
-				<div class="w3-container w3-card-2 w3-white w3-margin-bottom" style="padding-bottom:10px;">
-
-					<!-- Title -->
-					<h2 class="w3-text-gray w3-padding-16">
-						<i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-blue-gray"></i>Education
+				<!-- Education Section -->
+				<div class="bg-white shadow-lg rounded-lg p-6">
+					<h2 class="text-2xl font-semibold text-gray-800 mb-6 flex items-center">
+						<i class="fa fa-book fa-fw mr-4 text-slate-600 text-3xl"></i>
+						Education
 					</h2>
 
-					<!-- Turin -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/polito50neroSVG.svg" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">M.Sc. in Computer Engineering</p>
-									<p class="resume-entry-title-location">
-										<a href="https://www.polito.it/en" target="_blank">Polytechnic University of
-											Turin</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar
-									2017 - Mar 2020</h6>
+					<div class="space-y-6">
+						<!-- Turin -->
+						<div class="flex flex-col sm:flex-row sm:items-center">
+							<img src="media/images/polito50neroSVG.svg"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mb-4 sm:mb-0 sm:mr-4"
+								alt="Polytechnic University of Turin Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">M.Sc. in Computer Engineering</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://www.polito.it/en" target="_blank"
+										class="text-slate-600 hover:underline">Polytechnic University of Turin</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Mar 2017 - Mar 2020
+								</p>
+								<p class="text-gray-700 mt-2 text-sm">
+									Thesis at the <a target="_blank" href="https://www.tu-darmstadt.de/index.en.jsp"
+										class="text-slate-600 hover:underline">Technical University of Darmstadt</a>,
+									titled
+									"<a href="projects/msc_thesis/MSc Micera's thesis.pdf"
+										class="text-slate-600 hover:underline">Data center resource management for
+										in-network processing</a>"
+								</p>
 							</div>
 						</div>
-						<p>
-							Thesis at the <a target="_blank" href="https://www.tu-darmstadt.de/index.en.jsp">Technical
-								University of Darmstadt</a>, titled
-							"<a href="projects/msc_thesis/MSc Micera's thesis.pdf">Data center resource management for
-								in-network processing</a>"
-						</p>
-						<hr>
-					</div>
+						<hr class="border-gray-200">
 
-					<!-- Pisa -->
-					<div class="w3-container">
-						<div class="w3-row" style="display: flex; align-items: center;">
-							<div style="display: flex; align-items: center; justify-content: center;">
-								<img src="media/images/unipi.png" style="height: 50px; width: 50px;"></img>
-							</div>
-							<div style="margin-left: 10px;">
-								<h5 class="w3-opacity resume-entry-title-block">
-									<p class="resume-entry-title-name">B.Sc. in Computer Engineering</p>
-									<p class="resume-entry-title-location">
-										<a href="https://www.ing.unipi.it/en/" target="_blank">University of Pisa</a>
-									</p>
-								</h5>
-								<h6 class="w3-text-blue-gray"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct
-									2013 - Feb 2017</h6>
+						<!-- Pisa -->
+						<div class="flex flex-col sm:flex-row sm:items-center">
+							<img src="media/images/unipi.png"
+								class="h-12 w-12 rounded-full object-cover flex-shrink-0 mb-4 sm:mb-0 sm:mr-4"
+								alt="University of Pisa Logo">
+							<div>
+								<h3 class="text-lg font-semibold text-gray-900">B.Sc. in Computer Engineering</h3>
+								<p class="text-gray-600 text-sm">
+									<a href="https://www.ing.unipi.it/en/" target="_blank"
+										class="text-slate-600 hover:underline">University of Pisa</a>
+								</p>
+								<p class="text-gray-500 text-sm flex items-center mt-1">
+									<i class="fa fa-calendar fa-fw mr-2"></i>Oct 2013 - Feb 2017
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 
-			</div> <!-- End right column -->
+			</div> <!-- End Right column -->
 
-		</div> <!-- End grid -->
+		</div> <!-- End Main grid layout -->
 
-	</div> <!-- End page container -->
+	</div> <!-- End Page container -->
+
 </body>
 
 </html>
