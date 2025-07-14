@@ -31,6 +31,19 @@
 		body {
 			font-family: 'Inter', sans-serif;
 		}
+		@keyframes fade-in {
+			from { opacity: 0; transform: translateY(24px); }
+			to { opacity: 1; transform: none; }
+		}
+		.animate-fade-in {
+			animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
+		}
+		.card-hover {
+			transition: transform 0.8s cubic-bezier(0.4,0,0.2,1), box-shadow 0.8s cubic-bezier(0.4,0,0.2,1);
+		}
+		.card-hover:hover {
+			transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+		}
 	</style>
 
 	<!-- LinkedIn -->
@@ -54,15 +67,16 @@
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 					<!-- Left column - Profile Card (hidden on small screens) -->
 					<div class="md:col-span-1 hidden md:block">
-						<div class="bg-white shadow-lg rounded-lg overflow-hidden">
+						<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 							<div class="relative">
 								<img src="media/images/profile_pics/formal3_squared.jpg" alt="Marco Micera Profile"
 									class="w-full h-auto object-cover" loading="lazy">
 								<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
-									<h2 class="text-2xl font-semibold">Marco<br>Micera</h2>
+									<h2 class="text-2xl font-bold tracking-tight">Marco Micera</h2>
 								</div>
 							</div>
 							<div class="p-6">
+								<p class="mb-4 text-slate-700 text-base font-medium">Cutting cloud costs 💸</p>
 								<p class="mb-2 flex items-center text-slate-800">
 									<i class="fa fa-briefcase fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
 									<b class="font-medium">Senior DevOps Engineer</b>
@@ -73,18 +87,15 @@
 								</p>
 								<p class="mb-2 flex items-center text-slate-800">
 									<i class="fa fa-envelope fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-									<a href="mailto:marco.micera@gmail.com" target="_blank"
-										class="text-slate-600 hover:underline" aria-label="Email Marco Micera">marco.micera@gmail.com</a>
+									<a href="mailto:marco.micera@gmail.com" target="_blank" aria-label="Email Marco Micera" class="hover:underline">marco.micera@gmail.com</a>
 								</p>
 								<p class="mb-2 flex items-center text-slate-800">
 									<i class="fab fa-github fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-									<a href="https://github.com/marcomicera" target="_blank"
-										class="text-slate-600 hover:underline" aria-label="GitHub Profile">GitHub</a>
+									<a href="https://github.com/marcomicera" target="_blank" aria-label="GitHub Profile" class="hover:underline">GitHub</a>
 								</p>
 								<p class="mb-2 flex items-center text-slate-800">
 									<i class="fab fa-linkedin fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-									<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank"
-										class="text-slate-600 hover:underline" aria-label="LinkedIn Profile">LinkedIn</a>
+									<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank" aria-label="LinkedIn Profile" class="hover:underline">LinkedIn</a>
 								</p>
 							</div>
 						</div>
@@ -92,11 +103,12 @@
 					<!-- Right column - Main Content -->
 					<div class="col-span-1 md:col-span-2">
 						<!-- Contact Section (visible on small screens only) -->
-						<div class="bg-white shadow-lg rounded-lg p-6 mb-8 md:hidden">
-							<h2 class="text-2xl font-semibold text-slate-800 mb-4 flex items-center">
+						<div class="bg-white shadow-lg rounded-lg p-6 mb-8 md:hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+							<h2 class="text-2xl font-bold text-slate-800 mb-4 flex items-center">
 								<i class="fa fa-address-card fa-fw mr-4 text-slate-600 text-3xl" aria-hidden="true"></i>
 								Marco Micera
 							</h2>
+							<p class="mb-4 text-slate-700 text-base font-medium">Cutting cloud costs 💸</p>
 							<p class="mb-2 flex items-center text-slate-800">
 								<i class="fa fa-briefcase fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
 								<b class="font-medium">Senior DevOps Engineer</b>
@@ -107,23 +119,19 @@
 							</p>
 							<p class="mb-2 flex items-center text-slate-800">
 								<i class="fa fa-envelope fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-								<a href="mailto:marco.micera@gmail.com" target="_blank"
-									class="text-slate-600 hover:underline" aria-label="Email Marco Micera">marco.micera@gmail.com</a>
+								<a href="mailto:marco.micera@gmail.com" target="_blank" aria-label="Email Marco Micera" class="hover:underline">marco.micera@gmail.com</a>
 							</p>
 							<p class="mb-2 flex items-center text-slate-800">
 								<i class="fab fa-github fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-								<a href="https://github.com/marcomicera" target="_blank"
-									class="text-slate-600 hover:underline" aria-label="GitHub Profile">GitHub</a>
+								<a href="https://github.com/marcomicera" target="_blank" aria-label="GitHub Profile" class="hover:underline">GitHub</a>
 							</p>
 							<p class="mb-2 flex items-center text-slate-800">
 								<i class="fab fa-linkedin fa-fw mr-3 text-slate-600 text-lg" aria-hidden="true"></i>
-								<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank"
-									class="text-slate-600 hover:underline" aria-label="LinkedIn Profile">LinkedIn</a>
+								<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank" aria-label="LinkedIn Profile" class="hover:underline">LinkedIn</a>
 							</p>
 						</div>
-						<!-- Experience Section -->
-						<section aria-labelledby="experience-heading" class="bg-white shadow-lg rounded-lg p-6 mb-8">
-							<h2 id="experience-heading" class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+						<section aria-labelledby="experience-heading" class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl p-8 mb-12 card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+							<h2 id="experience-heading" class="text-3xl font-bold text-slate-800 mb-8 flex items-center">
 								<i class="fa fa-suitcase fa-fw mr-4 text-slate-600 text-3xl" aria-hidden="true"></i>
 								Experience
 							</h2>
@@ -212,9 +220,8 @@
 								</div>
 							</div>
 						</section>
-						<!-- Education Section -->
-						<section aria-labelledby="education-heading" class="bg-white shadow-lg rounded-lg p-6">
-							<h2 id="education-heading" class="text-2xl font-semibold text-slate-800 mb-6 flex items-center">
+						<section aria-labelledby="education-heading" class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl p-8 card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+							<h2 id="education-heading" class="text-3xl font-bold text-slate-800 mb-8 flex items-center">
 								<i class="fa fa-book fa-fw mr-4 text-slate-600 text-3xl" aria-hidden="true"></i>
 								Education
 							</h2>
