@@ -138,10 +138,10 @@
 							<!-- Experience Entry Template -->
 							<div class="space-y-6">
 								<!-- Ada Senior -->
-								<div class="flex items-center">
+								<div class="flex items-start">
 									<img src="media/images/ada.jpeg"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Ada Health Logo" loading="lazy">
-									<div>
+									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-slate-900">Senior DevOps Engineer</h3>
 										<p class="text-slate-600 text-sm">
 											<a href="https://ada.com" target="_blank" class="text-slate-600 hover:underline" aria-label="Ada Health">Ada
@@ -150,14 +150,41 @@
 										<p class="text-slate-500 text-sm flex items-center mt-1">
 											<i class="fa fa-calendar fa-fw mr-2" aria-hidden="true"></i>Apr 2024 - Jun 2025
 										</p>
+										<p class="text-slate-700 text-sm mt-2">Ada is an AI-driven digital health company offering symptom assessment and care navigation tools to millions, including major US healthcare firms.</p>
+										
+										<!-- Duties Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('ada-senior-duties')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="ada-senior-duties-icon"></i>
+												Duties
+											</button>
+											<div id="ada-senior-duties" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Built a one-click Azure infrastructure bootstrap for a major enterprise client, enhancing DRP readiness to meet 99.9% uptime requirements</p>
+												<p class="text-slate-700 text-sm">• Managed FinOps operations using DoIT and native GCP, Azure, and AWS cost tools to monitor spend, analyze trends, and detect anomalies</p>
+												<p class="text-slate-700 text-sm">• Led Helm chart standardization and migration efforts via Jenkins migration pipelines, tracking progress with Honeycomb dashboards</p>
+											</div>
+										</div>
+
+										<!-- Achievements Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('ada-senior-achievements')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="ada-senior-achievements-icon"></i>
+												Achievements
+											</button>
+											<div id="ada-senior-achievements" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Cut MongoDB production costs by 56% ($22.8k/year) by optimizing database storage and reclaiming unused space with zero downtime</p>
+												<p class="text-slate-700 text-sm">• Saved 7 weeks/year by automating company-wide Helm changes via centralized base charts, cutting deployment time from months to <1 hour</p>
+												<p class="text-slate-700 text-sm">• Ensured GDPR compliance with Terraform-managed GCS archives using TTL rules and audit-proof access controls for deleted medical data</p>
+											</div>
+										</div>
 									</div>
 								</div>
 								<hr class="border-slate-200">
 								<!-- Ada -->
-								<div class="flex items-center">
+								<div class="flex items-start">
 									<img src="media/images/ada.jpeg"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Ada Health Logo" loading="lazy">
-									<div>
+									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-slate-900">DevOps Engineer</h3>
 										<p class="text-slate-600 text-sm">
 											<a href="https://ada.com" target="_blank" class="text-slate-600 hover:underline" aria-label="Ada Health">Ada
@@ -166,14 +193,40 @@
 										<p class="text-slate-500 text-sm flex items-center mt-1">
 											<i class="fa fa-calendar fa-fw mr-2" aria-hidden="true"></i>May 2022 - Mar 2024
 										</p>
+										
+										<!-- Duties Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('ada-duties')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="ada-duties-icon"></i>
+												Duties
+											</button>
+											<div id="ada-duties" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Developed internal tools to enhance disaster recovery, including exporting PostgreSQL backups to external GCS buckets</p>
+												<p class="text-slate-700 text-sm">• Handled on-call incidents for cloud and Kubernetes with PagerDuty, kubectl, Honeycomb tracing, and E2E testing</p>
+												<p class="text-slate-700 text-sm">• Enabled regulatory compliance in Canada by mentoring the local infra team on secure CI/CD pipelines and access governance</p>
+												<p class="text-slate-700 text-sm">• Improved infrastructure robustness with Terraform, including prevention of accidental destruction and smooth replacement of resources</p>
+											</div>
+										</div>
+
+										<!-- Achievements Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('ada-achievements')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="ada-achievements-icon"></i>
+												Achievements
+											</button>
+											<div id="ada-achievements" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Cut Terraform provisioning time by 89% (18 → 2 mins) for 134 customer-specific IaC folders through selective provisioning, saving $1.8k/year</p>
+												<p class="text-slate-700 text-sm">• Reduced MongoDB IAM-related support tickets by 60% by integrating IAM with Terraform, enabling self-service access via approval workflows</p>
+											</div>
+										</div>
 									</div>
 								</div>
 								<hr class="border-slate-200">
 								<!-- Endocode -->
-								<div class="flex items-center">
+								<div class="flex items-start">
 									<img src="media/images/endocode.jpeg"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4" alt="Endocode Logo" loading="lazy">
-									<div>
+									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-slate-900">Cloud Infrastructure Engineer</h3>
 										<p class="text-slate-600 text-sm">
 											Endocode (now <a href="https://hoverture.com/" target="_blank"
@@ -182,15 +235,41 @@
 										<p class="text-slate-500 text-sm flex items-center mt-1">
 											<i class="fa fa-calendar fa-fw mr-2" aria-hidden="true"></i>Jul 2020 - Feb 2022
 										</p>
+										<p class="text-slate-700 text-sm mt-2">Endocode was a cloud consultancy and an official Google Cloud Platform (GCP) partner, delivering solutions primarily on GCP and other platforms.</p>
+										
+										<!-- Duties Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('endocode-duties')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="endocode-duties-icon"></i>
+												Duties
+											</button>
+											<div id="endocode-duties" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Consolidated multi-provider (GCP, AWS, & Azure) Terraform code for a global health company</p>
+												<p class="text-slate-700 text-sm">• Developed an ad-hoc license detector in Java for the EU-funded project <a href="https://www.fasten-project.eu/view/Main/" target="_blank" class="text-slate-600 hover:underline">Fasten</a>, integrated into their pipeline (Kafka on Kubernetes on-premise)</p>
+											</div>
+										</div>
+
+										<!-- Achievements Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('endocode-achievements')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="endocode-achievements-icon"></i>
+												Achievements
+											</button>
+											<div id="endocode-achievements" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Cut Kubernetes costs 35% by profiling deployments with Goldilocks, right-sizing resources, and reducing nodes by 40%</p>
+												<p class="text-slate-700 text-sm">• Cut Docker build times 79% (<a href="https://web.archive.org/web/20230531024301/https://hoverture.com/java-containerization-for-modular-pf4j-applications/" target="_blank" class="text-slate-600 hover:underline">from 104 to 22 seconds</a>) by optimizing Maven multi-stage builds, caching artifacts, and enabling BuildKit</p>
+												<p class="text-slate-700 text-sm">• Enabled a team of 3 developers to work concurrently and accelerate delivery by parallelizing the pipeline with selective task execution</p>
+											</div>
+										</div>
 									</div>
 								</div>
 								<hr class="border-slate-200">
 								<!-- USI -->
-								<div class="flex items-center">
+								<div class="flex items-start">
 									<img src="media/images/usi.png"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4"
 										alt="University of Lugano Logo" loading="lazy">
-									<div>
+									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-slate-900">Research Assistant</h3>
 										<p class="text-slate-600 text-sm">
 											<a href="https://www.usi.ch/en" target="_blank"
@@ -199,15 +278,27 @@
 										<p class="text-slate-500 text-sm flex items-center mt-1">
 											<i class="fa fa-calendar fa-fw mr-2" aria-hidden="true"></i>Apr 2019 - Jul 2019
 										</p>
+										
+										<!-- Duties Section -->
+										<div class="mt-3">
+											<button onclick="toggleSection('usi-duties')" class="flex items-center text-slate-600 hover:text-slate-800 font-medium text-sm">
+												<i class="fa fa-chevron-down fa-fw mr-2" id="usi-duties-icon"></i>
+												Duties
+											</button>
+											<div id="usi-duties" class="hidden mt-2 ml-4 space-y-1">
+												<p class="text-slate-700 text-sm">• Built a flow-based cluster scheduler aware of network resources; helped extend its <a href="https://github.com/mblo/hire-cluster-simulator" target="_blank" class="text-slate-600 hover:underline">Scala-based simulator</a> and refine the solver's cost model</p>
+												<p class="text-slate-700 text-sm">• The simulator featured in the 2021 ASPLOS paper "<a href="https://dl.acm.org/doi/abs/10.1145/3445814.3446760" target="_blank" class="text-slate-600 hover:underline">Switches for HIRE: Resource Scheduling for Data Center In-Network Computing</a>"</p>
+											</div>
+										</div>
 									</div>
 								</div>
-								<hr class="border-slate-200">
+								<!-- <hr class="border-slate-200"> -->
 								<!-- Uni Pisa -->
-								<div class="flex items-center">
+								<!-- <div class="flex items-start">
 									<img src="media/images/unipi.png"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mr-4"
 										alt="University of Pisa Logo" loading="lazy">
-									<div>
+									<div class="flex-1">
 										<h3 class="text-lg font-semibold text-slate-900">Web Developer</h3>
 										<p class="text-slate-600 text-sm">
 											<a href="https://www.ing.unipi.it/en/" target="_blank"
@@ -217,7 +308,7 @@
 											<i class="fa fa-calendar fa-fw mr-2" aria-hidden="true"></i>Sep 2016 - Aug 2017
 										</p>
 									</div>
-								</div>
+								</div> -->
 							</div>
 						</section>
 						<section aria-labelledby="projects-heading" class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl p-8 mb-8 card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
@@ -270,7 +361,7 @@
 							</h2>
 							<div class="space-y-6">
 								<!-- Turin -->
-								<div class="flex flex-col sm:flex-row sm:items-center">
+								<div class="flex flex-col sm:flex-row sm:items-start">
 									<img src="media/images/polito50neroSVG.svg"
 										class="h-12 w-12 rounded-full object-cover flex-shrink-0 mb-4 sm:mb-0 sm:mr-4"
 										alt="Polytechnic University of Turin Logo" loading="lazy">
@@ -317,6 +408,29 @@
 			</main>
 		</div> <!-- End Page container -->
 	</header>
+
+	<script>
+		// Function to toggle collapsible sections
+		function toggleSection(sectionId) {
+			const section = document.getElementById(sectionId);
+			const icon = document.getElementById(sectionId + '-icon');
+			
+			if (section.classList.contains('hidden')) {
+				section.classList.remove('hidden');
+				icon.classList.remove('fa-chevron-down');
+				icon.classList.add('fa-chevron-up');
+			} else {
+				section.classList.add('hidden');
+				icon.classList.remove('fa-chevron-up');
+				icon.classList.add('fa-chevron-down');
+			}
+		}
+
+		// All sections start collapsed by default
+		document.addEventListener('DOMContentLoaded', function() {
+			// No sections are expanded by default
+		});
+	</script>
 
 </body>
 
