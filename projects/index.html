@@ -1,452 +1,395 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113922571-1"></script>
-		<script>
-		  window.dataLayer = window.dataLayer || [];
-		  function gtag(){dataLayer.push(arguments);}
-		  gtag('js', new Date());
+<html lang="en">
 
-		  gtag('config', 'UA-113922571-1');
-		</script>
-		<!-- https://github.com/desandro/masonry -->
-		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" sync></script>
-		<title>Marco Micera's projects</title>
-		<meta charset="UTF-8">
-		<meta name="theme-color" content="#607d8b">
-		<meta name=”description” content=”Marco Micera&#39; personal website: portfolio & more.” />
-		<meta name=”robots” content=”noodp” />
-		<meta name=”keywords” content=”marco, micera, unipi, polito, marcomicera, computer, engineering, ingegneria, informatica” />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/png" href="../media/logo/16.png"/>
-		<link rel="stylesheet" href="../css/style.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<style>
-			body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-			.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-			.fa-anchor,.fa-coffee {font-size:200px}
-		</style>
-	</head>
-	<body>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113922571-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-		<!-- Navbar -->
-		<div class="w3-top" style="z-index: 10;">
-		  <div class="w3-bar w3-blue-gray w3-card-2 w3-left-align w3-large">
-			<a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue-gray" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-			<a href=".." class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-			<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">LinkedIn</a>
-			<a href="https://github.com/marcomicera" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GitHub</a>
-			<!-- <a href="../ripetizioni" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ripetizioni</a> -->
-			<div class="w3-dropdown-hover w3-hide-small">
-				<button class="w3-padding-large w3-button" title="Notes">Notes <i class="fa fa-caret-down"></i></button>
-				<div class="w3-dropdown-content w3-bar-block w3-card-4">
-					<a href="../bce" class="w3-bar-item w3-button w3-padding-large">Bachelor</a>
-					<a href="../mce" class="w3-bar-item w3-button w3-padding-large">Master</a>
-				</div>
-			</div>
-			<a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Projects</a>
-			<a href="https://marcomicera.github.io/stick-bridges" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">My online game</a>
-		  </div>
+		gtag('config', 'UA-113922571-1');
+	</script>
+	<title>Marco Micera - Projects</title>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#607d8b">
+	<meta name="description" content="Marco Micera's projects portfolio." />
+	<meta name="robots" content="noodp" />
+	<meta name="keywords"
+		content="marco, micera, unipi, polito, marcomicera, computer, engineering, ingegneria, informatica, projects" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="../media/logo/16.png" />
+	<!-- Link to Tailwind CSS CDN -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<!-- Custom styles for fonts, if needed, though Tailwind handles most styling -->
+	<style>
+		/* Define custom font families for Inter */
+		@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-		  <!-- Navbar on small screens -->
-		  <div id="navDemo" class="w3-bar-block w3-blue-gray w3-hide w3-hide-large w3-hide-medium w3-large">
-			<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank" class="w3-bar-item w3-button w3-padding-large">LinkedIn</a>
-			<a href="https://github.com/marcomicera" target="_blank" class="w3-bar-item w3-button w3-padding-large">GitHub</a>
-			<!-- <a href="../ripetizioni" class="w3-bar-item w3-button w3-padding-large">Ripetizioni</a> -->
-			<a href="../bce" class="w3-bar-item w3-button w3-padding-large">Bachelor's notes</a>
-			<a href="../mce" class="w3-bar-item w3-button w3-padding-large">Master's notes</a>
-			<a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Projects</a>
-			<a href="https://marcomicera.github.io/stick-bridges" target="_blank" class="w3-bar-item w3-button w3-padding-large">My online game</a>
-		  </div>
-		</div>
-
-		<!-- Page Container -->
-		<div class="w3-content" style="max-width:1400px; margin-top:70px;">
-			<!-- First projects row -->
-
-			<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
-				<div id="msc" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="msc_thesis/MSc Micera's thesis.pdf">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/msc_thesis.png" alt="Master's thesis" style="width:100%; padding-bottom: 30px;" class="">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Master's thesis</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Data center resource management for in-network processing
-							<ul>
-								<li><a href="msc_thesis/MSc Micera's thesis.pdf">Thesis</a> (<a href="https://github.com/marcomicera/thesis">LaTeX code</a>)</li>
-								<li><a href="https://github.com/mblo/hire-cluster-simulator">Simulator</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="cc" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/kubemarks">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/cc.jpg" alt="Cloud computing project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>kubemarks</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Kubernetes periodic benchmarking tool with Prometheus Pushgateway results exposer
-							<ul>
-								<li><a href="https://github.com/marcomicera/kubemarks">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="mad" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/followifier">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/followifier.png" alt="System and device programming project" style="width:100%;">
-								<!-- <div class="w3-display-bottomleft w3-container w3-text-white">
-									<h4>ReBook</h4>
-								</div> -->
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Wi-Fi tracking system
-							<ul>
-								<li><a href="https://github.com/marcomicera/followifier">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div id="mad" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/madkoko/rebook">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/mad2.png" alt="Security in networked computing systems project" style="width:100%;">
-								<!-- <div class="w3-display-bottomleft w3-container w3-text-white">
-									<h4>ReBook</h4>
-								</div> -->
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							A simple book sharing app for Android 
-							<ul>
-								<li><a href="https://docs.google.com/presentation/d/1BhJkaHjowAq2R_E4sTybv5Crc9nghLY5N8HZON2GRn0/edit?usp=sharing">Presentation</a></li>
-								<li><a href="https://github.com/madkoko/rebook">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="cds" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/jrt/">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/cds3.png" alt="Concurrent and distributed systems project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container w3-text-white">
-									<h4>Java Remote Terminal</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Web app for remote terminal access based on Java RMI
-							<ul>
-								<li><a href="https://docs.google.com/presentation/d/10shS9a3MBnGzHJxVN00AkiPB5oL0qMSft7UazxxIZK8/edit?usp=sharing">Presentation</a></li>
-								<li><a href="https://github.com/marcomicera/jrt/">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="sncs" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="sncs/Security in networked computing systems Micera's report.pdf">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/sncs3.png" alt="Security in networked computing systems project" style="width:100%; padding-bottom: 50px;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>One Time Password</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Home banking login service with One Time Password
-							<ul>
-								<li><a href="sncs/Security in networked computing systems Micera's report.pdf">Report</a></li>
-								<li><a href="https://github.com/marcomicera/otp">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="combo" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/secret-combo">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/ri.png" alt="Computer networks project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container w3-text-white">
-									<h4>Secret Combo game</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							P2P word guessing game based on C sockets
-							<ul>
-								<li><a href="https://github.com/marcomicera/secret-combo">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			
-				<div id="is" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/smart-door">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/is.png" alt="Intelligent Systems project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Movement Recognizer for Smart Doors</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Matlab script based on AI algorithms for determing people's movements from RFID signals
-							<ul>
-								<li><a href="is/Intelligent Systems Manafi & Micera's project report.pdf">Report</a></li>
-								<li><a href="https://github.com/marcomicera/smart-door">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="bsc" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="bsc_thesis/BSc Micera's thesis.pdf">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/bsc_thesis5.png" alt="Bachelor's thesis project" style="width:100%; padding-bottom: 10px;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Bachelor's thesis</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Joomla reporting module for foreign students selection applying to Computer Engineering Master's programmes
-							<ul>
-								<li><a href="bsc_thesis/BSc Micera's thesis.pdf">Thesis</a></li>
-								<li><a href="https://github.com/marcomicera/enrollments-report">Code</a></li>
-								<li><a href="bsc_thesis/BSc Micera's slideshow.pdf">5-minutes slideshow</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="java" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://github.com/marcomicera/eWallet">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/prg.png" alt="Java programming project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>eWallet</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Practical Windows tool that helps you to keep track of your entries
-							<ul>
-								<li><a href="prg/Java Programming Micera's report.pdf">Report</a></li>
-								<li><a href="https://github.com/marcomicera/eWallet">Code</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<div id="stb" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="https://marcomicera.github.io/stick-bridges" target="_blank">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/pweb.png" alt="Web development project" style="width:100%;">
-								<div class="w3-display-bottomleft w3-container w3-text-white">
-									<h4>Stick Bridges</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-							Online video game inspired by <a href="https://itunes.apple.com/us/app/stick-hero/id918338898?mt=8">Stick Hero</a> made in pure JavaScript
-							<ul>
-								<li><a href="https://marcomicera.github.io/stick-bridges" target="_blank">Web game</a></li>
-								<li><a href="https://github.com/marcomicera/stick-bridges">Code</a></li>
-							</ul>
-							
-						</div>
-					</div>
-				</div>
-				
-				<div id="db" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="bdd/Database systems Micera's report.pdf">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/bdd2.png" alt="Database systems project" style="width:100%; padding-bottom: 40px;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Gardening company DB</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container">
-							MySQL database development for a gardening company
-							<ul>
-								<li><a href="bdd/Database systems specs.pdf">Specs</a></li>
-								<li><a href="bdd/Database systems Micera's report.pdf">Report</a></li>
-								<li><a href="https://github.com/marcomicera/gardening-db">Code</a></li>
-								<li><a href="bdd/Database systems Micera's E-R diagram.png">E-R diagram</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				
-				<!-- <div id="small-ad" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4" style="padding-bottom: 16px;">
-						<div class="w3-container w3-padding">
-							<h2 class="w3-text-blue-gray ">Ad</h2>
-						</div>
-						<center>
-							<script type="text/javascript">
-								/* <![CDATA[ */
-								document.write('<s'+'cript type="text/javascript" src="//ad.altervista.org/js.ad/size=300X250/?ref='+encodeURIComponent(location.hostname+location.pathname)+'&r='+new Date().getTime()+'"></s'+'cript>');
-								/* ]]> */
-							</script>
-						</center>
-					</div>
-				</div> -->
-
-				<div id="ca" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="##">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/ca.png" alt="Computer architecture presentations" style="width:100%; padding-bottom: 20px;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Computer architecture</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-                        	Presentations made during the Computer Architecture course
-							<ul>
-                            	<li><a href="ca/Security_Systems_Solutions.pptx">Security Systems Solutions</a> (Commercial)</li>
-                                <li><a href="ca/Synchronization_in_cache-coherent_architectures.pdf">Synchronization in cache-coherent architectures</a> (Academic)</li>
-								<li><a href="ca/Designing_the_MEF_s_system_architecture.pptx">Designing the MEF's system architecture</a> (Industrial)</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-				<div id="dbms" class="w3-col l3 m6 s12 w3-padding grid-item">
-					<div class="w3-card-4">
-						<a href="##">
-							<div class="w3-display-container w3-hover-opacity">
-								<img src="previews/dbms.jpg" alt="Database management systems" style="width:100%; padding-bottom: 25px;">
-								<div class="w3-display-bottomleft w3-container">
-									<h4>Database management systems</h4>
-								</div>
-							</div>
-						</a>
-						<div class="w3-container w3-padding">
-                        	Assignments made during the Database management systems course
-							<ul>
-                            	<li>Query optimization: <a href="dbms/H1 Text.pdf">Specs</a>, <a href="dbms/H1 Solution.pdf">Solution</a></li>
-                                <li>Triggers: <a href="dbms/H2 Text.pdf">Specs</a>, <a href="dbms/H2 Solution.pdf">Solution</a></li>
-								<li>Data warehouse: <a href="dbms/H3 Text.pdf">Specs</a>, <a href="dbms/H3 Solution.pdf">Solution</a></li>
-								<li>Data mining: <a href="dbms/H4 Text.pdf">Specs</a>, <a href="dbms/H4 Solution.pdf">Solution</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-
-			
-			<!-- Ad -->			
-			<!-- <div id="ad" class="w3-container w3-card-2 w3-white w3-padding-16 w3-margin">
-				<center>
-					<script type="text/javascript">
-						/* <![CDATA[ */
-						document.write('<s'+'cript type="text/javascript" src="//ad.altervista.org/js.ad/size=728X90/?ref='+encodeURIComponent(location.hostname+location.pathname)+'&r='+new Date().getTime()+'"></s'+'cript>');
-						/* ]]> */
-					</script>
-				</center>
-			</div> -->
-			
-			
-			<!-- Comments -->
-			<!-- <div id="comment-section" class="w3-container w3-card-2 w3-white w3-margin w3-padding-16">
-				<h2 class="w3-text-blue-gray ">Was it helpful?</h2>
-					<div class="w3-container">
-						<p>
-							I'd really appreciate your feedback, so please, feel free to leave a comment down below!
-						</p>
-					</div>
-				<div class="w3-container">
-					<div id="fb-root"></div>
-					<script>(function(d, s, id) {
-							var js, fjs = d.getElementsByTagName(s)[0];
-							if (d.getElementById(id)) return;
-							js = d.createElement(s); js.id = id;
-							js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=118721764900714";
-							fjs.parentNode.insertBefore(js, fjs);
-						}(document, 'script', 'facebook-jssdk'));
-					</script>
-					<div class="fb-comments" data-href="http://marcomicera.altervista.org/appunti/" data-width="100%" data-numposts="10"></div>
-				</div>
-			</div> -->
-			
-			</div>
-
-		<!-- End Page Container -->
-		</div>
-
-		<!-- Footer -->
-		<footer class="w3-container w3-blue-gray w3-center w3-margin-top w3-padding-24">
-			<!-- <p>Find me on social media.</p> -->
-			<div id="social_links" class="w3-center" style="padding-bottom:10px;">
-				<a href="https://github.com/marcomicera" target="_blank"><i class="fa fa-github fa-fw w3-xlarge w3-text-white"></i></a>
-				<a href="https://www.linkedin.com/in/micera/?locale=en_US" target="_blank"><i class="fa fa-linkedin fa-fw w3-xlarge w3-text-white"></i></a>
-				<a href="mailto:marco.micera@gmail.com" target="_blank"><i class="fa fa-envelope fa-fw w3-xlarge w3-text-white"></i></a>
-				<!-- <a href="https://join.skype.com/invite/cFcJ4PE6JkFe" target="_blank"><i class="fa fa-skype fa-fw w3-xlarge w3-text-white"></i></a> -->
-			  </div>
-		  
-			<!-- <i class="fa fa-facebook-official w3-hover-opacity"></i>
-			<i class="fa fa-instagram w3-hover-opacity"></i>
-			<i class="fa fa-snapchat w3-hover-opacity"></i>
-			<i class="fa fa-pinterest-p w3-hover-opacity"></i>
-			<i class="fa fa-twitter w3-hover-opacity"></i>
-			<i class="fa fa-linkedin w3-hover-opacity"></i> -->
-		</footer>
-
-
-		<script>
-		// Used to toggle the menu on small screens when clicking on the menu button
-		function myFunction() {
-			var x = document.getElementById("navDemo");
-			if (x.className.indexOf("w3-show") == -1) {
-				x.className += " w3-show";
-			} else { 
-				x.className = x.className.replace(" w3-show", "");
-			}
+		body {
+			font-family: 'Inter', sans-serif;
 		}
-		</script>
-		
-		<!-- Prova evento Facebook -->
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
-	</body>
+		@keyframes fade-in {
+			from { opacity: 0; transform: translateY(24px); }
+			to { opacity: 1; transform: none; }
+		}
+		.animate-fade-in {
+			animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
+		}
+		.card-hover {
+			transition: transform 0.8s cubic-bezier(0.4,0,0.2,1), box-shadow 0.8s cubic-bezier(0.4,0,0.2,1);
+		}
+		.card-hover:hover {
+			transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+		}
+	</style>
+
+	<!-- LinkedIn -->
+	<meta property="og:title" content="Marco Micera – Projects Portfolio" />
+	<meta property="og:description" content="Marco Micera's projects portfolio." />
+	<meta property="og:image" content="https://marcomicera.github.io/media/images/profile_pics/formal3_squared.jpg" />
+	<meta property="og:url" content="https://marcomicera.github.io/projects/" />
+	<meta property="og:type" content="website" />
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Marco Micera – Projects Portfolio" />
+</head>
+
+<body class="bg-gray-100 text-gray-700">
+
+	<header>
+		<!-- Page container -->
+		<div class="container mx-auto px-4 py-8 max-w-6xl">
+			<!-- Back button -->
+			<div class="mb-8">
+				<a href="../index.html" class="inline-flex items-center text-slate-600 hover:text-slate-800 hover:underline font-medium text-lg">
+					<i class="fa fa-arrow-left fa-fw mr-3" aria-hidden="true"></i>
+					Back to main page
+				</a>
+			</div>
+
+			<!-- Main content -->
+			<main>
+				<!-- Page title -->
+				<div class="text-center mb-12">
+					<h1 class="text-4xl font-bold text-slate-800 mb-4">Projects Portfolio</h1>
+					<p class="text-xl text-slate-600">A collection of my academic and personal projects</p>
+				</div>
+
+				<!-- Projects grid -->
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<!-- MSc Thesis -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/msc_thesis.png" alt="Master's thesis" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Master's thesis</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Data center resource management for in-network processing</p>
+							<div class="space-y-2">
+								<a href="msc_thesis/MSc Micera's thesis.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Thesis
+								</a>
+								<a href="https://github.com/marcomicera/thesis" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>LaTeX code
+								</a>
+								<a href="https://github.com/mblo/hire-cluster-simulator" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Simulator
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- kubemarks -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/cc.jpg" alt="kubemarks project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">kubemarks</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Kubernetes periodic benchmarking tool with Prometheus Pushgateway results exposer</p>
+							<div class="space-y-2">
+								<a href="https://github.com/marcomicera/kubemarks" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- followifier -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/followifier.png" alt="followifier project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">followifier</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Wi-Fi tracking system</p>
+							<div class="space-y-2">
+								<a href="https://github.com/marcomicera/followifier" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- ReBook -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/mad2.png" alt="ReBook project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">ReBook</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">A simple book sharing app for Android</p>
+							<div class="space-y-2">
+								<a href="https://docs.google.com/presentation/d/1BhJkaHjowAq2R_E4sTybv5Crc9nghLY5N8HZON2GRn0/edit?usp=sharing" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Presentation
+								</a>
+								<a href="https://github.com/madkoko/rebook" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Java Remote Terminal -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/cds3.png" alt="Java Remote Terminal project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Java Remote Terminal</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Web app for remote terminal access based on Java RMI</p>
+							<div class="space-y-2">
+								<a href="https://docs.google.com/presentation/d/10shS9a3MBnGzHJxVN00AkiPB5oL0qMSft7UazxxIZK8/edit?usp=sharing" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Presentation
+								</a>
+								<a href="https://github.com/marcomicera/jrt/" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- One Time Password -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/sncs3.png" alt="One Time Password project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">One Time Password</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Home banking login service with One Time Password</p>
+							<div class="space-y-2">
+								<a href="sncs/Security in networked computing systems Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
+								</a>
+								<a href="https://github.com/marcomicera/otp" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Secret Combo -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/ri.png" alt="Secret Combo project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Secret Combo game</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">P2P word guessing game based on C sockets</p>
+							<div class="space-y-2">
+								<a href="https://github.com/marcomicera/secret-combo" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Movement Recognizer -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/is.png" alt="Movement Recognizer project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Movement Recognizer</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Matlab script based on AI algorithms for determining people's movements from RFID signals</p>
+							<div class="space-y-2">
+								<a href="is/Intelligent Systems Manafi & Micera's project report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
+								</a>
+								<a href="https://github.com/marcomicera/smart-door" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- BSc Thesis -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/bsc_thesis5.png" alt="Bachelor's thesis project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Bachelor's thesis</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Joomla reporting module for foreign students selection applying to Computer Engineering Master's programmes</p>
+							<div class="space-y-2">
+								<a href="bsc_thesis/BSc Micera's thesis.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Thesis
+								</a>
+								<a href="https://github.com/marcomicera/enrollments-report" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+								<a href="bsc_thesis/BSc Micera's slideshow.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>5-minutes slideshow
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- eWallet -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/prg.png" alt="eWallet project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">eWallet</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Practical Windows tool that helps you to keep track of your entries</p>
+							<div class="space-y-2">
+								<a href="prg/Java Programming Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
+								</a>
+								<a href="https://github.com/marcomicera/eWallet" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Stick Bridges -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/pweb.png" alt="Stick Bridges project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Stick Bridges</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Online video game inspired by Stick Hero made in pure JavaScript</p>
+							<div class="space-y-2">
+								<a href="https://marcomicera.github.io/stick-bridges" target="_blank" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-gamepad fa-fw mr-2" aria-hidden="true"></i>Web game
+								</a>
+								<a href="https://github.com/marcomicera/stick-bridges" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Database Systems -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/bdd2.png" alt="Database systems project" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Gardening company DB</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">MySQL database development for a gardening company</p>
+							<div class="space-y-2">
+								<a href="bdd/Database systems specs.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Specs
+								</a>
+								<a href="bdd/Database systems Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
+								</a>
+								<a href="https://github.com/marcomicera/gardening-db" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
+								</a>
+								<a href="bdd/Database systems Micera's E-R diagram.png" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-image fa-fw mr-2" aria-hidden="true"></i>E-R diagram
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Computer Architecture -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/ca.png" alt="Computer architecture presentations" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Computer architecture</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Presentations made during the Computer Architecture course</p>
+							<div class="space-y-2">
+								<a href="ca/Security_Systems_Solutions.pptx" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Security Systems Solutions (Commercial)
+								</a>
+								<a href="ca/Synchronization_in_cache-coherent_architectures.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Synchronization in cache-coherent architectures (Academic)
+								</a>
+								<a href="ca/Designing_the_MEF_s_system_architecture.pptx" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Designing the MEF's system architecture (Industrial)
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<!-- Database Management Systems -->
+					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+						<div class="relative">
+							<img src="previews/dbms.jpg" alt="Database management systems" class="w-full h-48 object-cover">
+							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
+								<h3 class="text-xl font-bold">Database management systems</h3>
+							</div>
+						</div>
+						<div class="p-6">
+							<p class="text-slate-700 mb-4">Assignments made during the Database management systems course</p>
+							<div class="space-y-2">
+								<a href="dbms/H1 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Query optimization: Specs, <a href="dbms/H1 Solution.pdf" class="hover:underline">Solution</a>
+								</a>
+								<a href="dbms/H2 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Triggers: Specs, <a href="dbms/H2 Solution.pdf" class="hover:underline">Solution</a>
+								</a>
+								<a href="dbms/H3 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data warehouse: Specs, <a href="dbms/H3 Solution.pdf" class="hover:underline">Solution</a>
+								</a>
+								<a href="dbms/H4 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data mining: Specs, <a href="dbms/H4 Solution.pdf" class="hover:underline">Solution</a>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div> <!-- End Page container -->
+	</header>
+
+</body>
+
 </html>
