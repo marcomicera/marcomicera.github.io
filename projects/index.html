@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113922571-1"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-YY8CE5SCGW"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
-		gtag('config', 'UA-113922571-1');
+		gtag('config', 'G-YY8CE5SCGW');
 	</script>
 	<title>Marco Micera - Projects</title>
 	<meta charset="UTF-8">
@@ -31,18 +31,29 @@
 		body {
 			font-family: 'Inter', sans-serif;
 		}
+
 		@keyframes fade-in {
-			from { opacity: 0; transform: translateY(24px); }
-			to { opacity: 1; transform: none; }
+			from {
+				opacity: 0;
+				transform: translateY(24px);
+			}
+
+			to {
+				opacity: 1;
+				transform: none;
+			}
 		}
+
 		.animate-fade-in {
-			animation: fade-in 0.8s cubic-bezier(0.4,0,0.2,1) both;
+			animation: fade-in 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
 		}
+
 		.card-hover {
-			transition: transform 0.8s cubic-bezier(0.4,0,0.2,1), box-shadow 0.8s cubic-bezier(0.4,0,0.2,1);
+			transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 		}
+
 		.card-hover:hover {
-			transition: transform 0.4s cubic-bezier(0.4,0,0.2,1), box-shadow 0.4s cubic-bezier(0.4,0,0.2,1);
+			transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 		}
 	</style>
 
@@ -64,7 +75,8 @@
 		<div class="container mx-auto px-4 py-8 max-w-6xl">
 			<!-- Back button -->
 			<div class="mb-8">
-				<a href=".." class="inline-flex items-center text-slate-600 hover:text-slate-800 hover:underline font-medium text-lg">
+				<a href=".."
+					class="inline-flex items-center text-slate-600 hover:text-slate-800 hover:underline font-medium text-lg">
 					<i class="fa fa-arrow-left fa-fw mr-3" aria-hidden="true"></i>
 					Back to main page
 				</a>
@@ -81,7 +93,8 @@
 				<!-- Projects grid -->
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 					<!-- kubemarks -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/cc.jpg" alt="kubemarks project" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -89,9 +102,11 @@
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Kubernetes periodic benchmarking tool with Prometheus Pushgateway results exposer</p>
+							<p class="text-slate-700 mb-4">Kubernetes periodic benchmarking tool with Prometheus
+								Pushgateway results exposer</p>
 							<div class="space-y-2">
-								<a href="https://github.com/marcomicera/kubemarks" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/kubemarks"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -99,7 +114,8 @@
 					</div>
 
 					<!-- MSc Thesis -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/msc_thesis.png" alt="Master's thesis" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -109,23 +125,28 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">Data center resource management for in-network processing</p>
 							<div class="space-y-2">
-								<a href="msc_thesis/MSc Micera's thesis.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="msc_thesis/MSc Micera's thesis.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Thesis
 								</a>
-								<a href="https://github.com/marcomicera/thesis" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/thesis"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>LaTeX code
 								</a>
-								<a href="https://github.com/mblo/hire-cluster-simulator" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/mblo/hire-cluster-simulator"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Simulator
 								</a>
 							</div>
 						</div>
 					</div>
-					
+
 					<!-- followifier -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/followifier.png" alt="followifier project" class="w-full h-48 object-cover">
+							<img src="previews/followifier.png" alt="followifier project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">followifier</h3>
 							</div>
@@ -133,7 +154,8 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">Wi-Fi tracking system</p>
 							<div class="space-y-2">
-								<a href="https://github.com/marcomicera/followifier" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/followifier"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -141,7 +163,8 @@
 					</div>
 
 					<!-- Stick Bridges -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/pweb.png" alt="Stick Bridges project" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -149,12 +172,15 @@
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Online video game inspired by Stick Hero made in pure JavaScript</p>
+							<p class="text-slate-700 mb-4">Online video game inspired by Stick Hero made in pure
+								JavaScript</p>
 							<div class="space-y-2">
-								<a href="https://marcomicera.github.io/stick-bridges" target="_blank" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://marcomicera.github.io/stick-bridges" target="_blank"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-gamepad fa-fw mr-2" aria-hidden="true"></i>Web game
 								</a>
-								<a href="https://github.com/marcomicera/stick-bridges" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/stick-bridges"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -162,7 +188,8 @@
 					</div>
 
 					<!-- ReBook -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/mad2.png" alt="ReBook project" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -172,10 +199,12 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">A simple book sharing app for Android</p>
 							<div class="space-y-2">
-								<a href="https://docs.google.com/presentation/d/1BhJkaHjowAq2R_E4sTybv5Crc9nghLY5N8HZON2GRn0/edit?usp=sharing" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://docs.google.com/presentation/d/1BhJkaHjowAq2R_E4sTybv5Crc9nghLY5N8HZON2GRn0/edit?usp=sharing"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Presentation
 								</a>
-								<a href="https://github.com/madkoko/rebook" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/madkoko/rebook"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -183,9 +212,11 @@
 					</div>
 
 					<!-- Java Remote Terminal -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/cds3.png" alt="Java Remote Terminal project" class="w-full h-48 object-cover">
+							<img src="previews/cds3.png" alt="Java Remote Terminal project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Java Remote Terminal</h3>
 							</div>
@@ -193,10 +224,12 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">Web app for remote terminal access based on Java RMI</p>
 							<div class="space-y-2">
-								<a href="https://docs.google.com/presentation/d/10shS9a3MBnGzHJxVN00AkiPB5oL0qMSft7UazxxIZK8/edit?usp=sharing" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://docs.google.com/presentation/d/10shS9a3MBnGzHJxVN00AkiPB5oL0qMSft7UazxxIZK8/edit?usp=sharing"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Presentation
 								</a>
-								<a href="https://github.com/marcomicera/jrt/" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/jrt/"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -204,9 +237,11 @@
 					</div>
 
 					<!-- One Time Password -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/sncs3.png" alt="One Time Password project" class="w-full h-48 object-cover">
+							<img src="previews/sncs3.png" alt="One Time Password project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">One Time Password</h3>
 							</div>
@@ -214,10 +249,12 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">Home banking login service with One Time Password</p>
 							<div class="space-y-2">
-								<a href="sncs/Security in networked computing systems Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="sncs/Security in networked computing systems Micera's report.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
 								</a>
-								<a href="https://github.com/marcomicera/otp" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/otp"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -225,7 +262,8 @@
 					</div>
 
 					<!-- Secret Combo -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/ri.png" alt="Secret Combo project" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -235,7 +273,8 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">P2P word guessing game based on C sockets</p>
 							<div class="space-y-2">
-								<a href="https://github.com/marcomicera/secret-combo" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/secret-combo"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -243,20 +282,25 @@
 					</div>
 
 					<!-- Movement Recognizer -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/is.png" alt="Movement Recognizer project" class="w-full h-48 object-cover">
+							<img src="previews/is.png" alt="Movement Recognizer project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Movement Recognizer</h3>
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Matlab script based on AI algorithms for determining people's movements from RFID signals</p>
+							<p class="text-slate-700 mb-4">Matlab script based on AI algorithms for determining people's
+								movements from RFID signals</p>
 							<div class="space-y-2">
-								<a href="is/Intelligent Systems Manafi & Micera's project report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="is/Intelligent Systems Manafi & Micera's project report.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
 								</a>
-								<a href="https://github.com/marcomicera/smart-door" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/smart-door"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -264,23 +308,29 @@
 					</div>
 
 					<!-- BSc Thesis -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/bsc_thesis5.png" alt="Bachelor's thesis project" class="w-full h-48 object-cover">
+							<img src="previews/bsc_thesis5.png" alt="Bachelor's thesis project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Bachelor's thesis</h3>
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Joomla reporting module for foreign students selection applying to Computer Engineering Master's programmes</p>
+							<p class="text-slate-700 mb-4">Joomla reporting module for foreign students selection
+								applying to Computer Engineering Master's programmes</p>
 							<div class="space-y-2">
-								<a href="bsc_thesis/BSc Micera's thesis.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="bsc_thesis/BSc Micera's thesis.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Thesis
 								</a>
-								<a href="https://github.com/marcomicera/enrollments-report" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/enrollments-report"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
-								<a href="bsc_thesis/BSc Micera's slideshow.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="bsc_thesis/BSc Micera's slideshow.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>5-minutes slideshow
 								</a>
 							</div>
@@ -288,7 +338,8 @@
 					</div>
 
 					<!-- eWallet -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
 							<img src="previews/prg.png" alt="eWallet project" class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
@@ -296,12 +347,15 @@
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Practical Windows tool that helps you to keep track of your entries</p>
+							<p class="text-slate-700 mb-4">Practical Windows tool that helps you to keep track of your
+								entries</p>
 							<div class="space-y-2">
-								<a href="prg/Java Programming Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="prg/Java Programming Micera's report.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
 								</a>
-								<a href="https://github.com/marcomicera/eWallet" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/eWallet"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
 							</div>
@@ -309,9 +363,11 @@
 					</div>
 
 					<!-- Database Systems -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/bdd2.png" alt="Database systems project" class="w-full h-48 object-cover">
+							<img src="previews/bdd2.png" alt="Database systems project"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Gardening company DB</h3>
 							</div>
@@ -319,16 +375,20 @@
 						<div class="p-6">
 							<p class="text-slate-700 mb-4">MySQL database development for a gardening company</p>
 							<div class="space-y-2">
-								<a href="bdd/Database systems specs.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="bdd/Database systems specs.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Specs
 								</a>
-								<a href="bdd/Database systems Micera's report.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="bdd/Database systems Micera's report.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Report
 								</a>
-								<a href="https://github.com/marcomicera/gardening-db" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="https://github.com/marcomicera/gardening-db"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fab fa-github fa-fw mr-2" aria-hidden="true"></i>Code
 								</a>
-								<a href="bdd/Database systems Micera's E-R diagram.png" class="block text-slate-600 hover:text-slate-800 hover:underline">
+								<a href="bdd/Database systems Micera's E-R diagram.png"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
 									<i class="fa fa-image fa-fw mr-2" aria-hidden="true"></i>E-R diagram
 								</a>
 							</div>
@@ -336,51 +396,71 @@
 					</div>
 
 					<!-- Computer Architecture -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/ca.png" alt="Computer architecture presentations" class="w-full h-48 object-cover">
+							<img src="previews/ca.png" alt="Computer architecture presentations"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Computer architecture</h3>
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Presentations made during the Computer Architecture course</p>
+							<p class="text-slate-700 mb-4">Presentations made during the Computer Architecture course
+							</p>
 							<div class="space-y-2">
-								<a href="ca/Security_Systems_Solutions.pptx" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Security Systems Solutions (Commercial)
+								<a href="ca/Security_Systems_Solutions.pptx"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Security Systems
+									Solutions (Commercial)
 								</a>
-								<a href="ca/Synchronization_in_cache-coherent_architectures.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Synchronization in cache-coherent architectures (Academic)
+								<a href="ca/Synchronization_in_cache-coherent_architectures.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Synchronization in
+									cache-coherent architectures (Academic)
 								</a>
-								<a href="ca/Designing_the_MEF_s_system_architecture.pptx" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Designing the MEF's system architecture (Industrial)
+								<a href="ca/Designing_the_MEF_s_system_architecture.pptx"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-powerpoint fa-fw mr-2" aria-hidden="true"></i>Designing the
+									MEF's system architecture (Industrial)
 								</a>
 							</div>
 						</div>
 					</div>
 
 					<!-- Database Management Systems -->
-					<div class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
+					<div
+						class="bg-slate-50 border border-slate-200 shadow-lg rounded-2xl overflow-hidden card-hover hover:scale-105 hover:shadow-2xl animate-fade-in">
 						<div class="relative">
-							<img src="previews/dbms.jpg" alt="Database management systems" class="w-full h-48 object-cover">
+							<img src="previews/dbms.jpg" alt="Database management systems"
+								class="w-full h-48 object-cover">
 							<div class="absolute bottom-0 left-0 p-4 text-white bg-black bg-opacity-50 w-full">
 								<h3 class="text-xl font-bold">Database management systems</h3>
 							</div>
 						</div>
 						<div class="p-6">
-							<p class="text-slate-700 mb-4">Assignments made during the Database management systems course</p>
+							<p class="text-slate-700 mb-4">Assignments made during the Database management systems
+								course</p>
 							<div class="space-y-2">
-								<a href="dbms/H1 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Query optimization: Specs, <a href="dbms/H1 Solution.pdf" class="hover:underline">Solution</a>
+								<a href="dbms/H1 Text.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Query optimization:
+									Specs, <a href="dbms/H1 Solution.pdf" class="hover:underline">Solution</a>
 								</a>
-								<a href="dbms/H2 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Triggers: Specs, <a href="dbms/H2 Solution.pdf" class="hover:underline">Solution</a>
+								<a href="dbms/H2 Text.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Triggers: Specs, <a
+										href="dbms/H2 Solution.pdf" class="hover:underline">Solution</a>
 								</a>
-								<a href="dbms/H3 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data warehouse: Specs, <a href="dbms/H3 Solution.pdf" class="hover:underline">Solution</a>
+								<a href="dbms/H3 Text.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data warehouse: Specs,
+									<a href="dbms/H3 Solution.pdf" class="hover:underline">Solution</a>
 								</a>
-								<a href="dbms/H4 Text.pdf" class="block text-slate-600 hover:text-slate-800 hover:underline">
-									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data mining: Specs, <a href="dbms/H4 Solution.pdf" class="hover:underline">Solution</a>
+								<a href="dbms/H4 Text.pdf"
+									class="block text-slate-600 hover:text-slate-800 hover:underline">
+									<i class="fa fa-file-pdf fa-fw mr-2" aria-hidden="true"></i>Data mining: Specs, <a
+										href="dbms/H4 Solution.pdf" class="hover:underline">Solution</a>
 								</a>
 							</div>
 						</div>
