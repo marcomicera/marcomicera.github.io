@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Stix game preview">
+  <!-- Sky -->
+  <rect width="48" height="48" fill="#a9d8d8"/>
+
+  <!-- Left platform -->
+  <!-- <rect x="0" y="34" width="22" height="14" fill="#1a1a1a"/> -->
+  <!-- Right platform -->
+  <!-- <rect x="34" y="34" width="8" height="14" fill="#1a1a1a"/> -->
+  <!-- Stick (growing upward) -->
+  <!-- <rect x="20" y="10" width="2" height="24" fill="#1a1a1a"/> -->
+  <!-- Player -->
+  <!-- <rect x="14" y="28" width="6" height="6" fill="#e53935"/> -->
+
+  <!-- Minimal -->
+  <rect x="10" y="10" width="28" height="28" fill="#ff514e" rx="3"/>
+</svg>
